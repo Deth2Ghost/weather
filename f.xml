@@ -6,13 +6,13 @@
 <link>http://us.rd.yahoo.com/dailynews/rss/weather/Kiev__UP/*http://weather.yahoo.com/forecast/UPXX0016_c.html</link>
 <description>Yahoo! Weather for Kiev, UP</description>
 <language>en-us</language>
-<lastBuildDate>Thu, 28 Jan 2016 5:30 pm EET</lastBuildDate>
+<lastBuildDate>Sun, 31 Jan 2016 10:29 pm EET</lastBuildDate>
 <ttl>60</ttl>
 <yweather:location city="Kiev" region=""   country="UP"/>
 <yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>
-<yweather:wind chill="2"   direction="260"   speed="25.75" />
-<yweather:atmosphere humidity="76"  visibility="9.99"  pressure="982.05"  rising="0" />
-<yweather:astronomy sunrise="7:39 am"   sunset="4:43 pm"/>
+<yweather:wind chill="-4"   direction="260"   speed="20.92" />
+<yweather:atmosphere humidity="87"  visibility="9.99"  pressure="982.05"  rising="1" />
+<yweather:astronomy sunrise="7:35 am"   sunset="4:47 pm"/>
 <image>
 <title>Yahoo! Weather</title>
 <width>142</width>
@@ -21,34 +21,34 @@
 <url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
 </image>
 <item>
-<title>Conditions for Kiev, UP at 5:30 pm EET</title>
+<title>Conditions for Kiev, UP at 10:29 pm EET</title>
 <geo:lat>50.4</geo:lat>
 <geo:long>30.45</geo:long>
 <link>http://us.rd.yahoo.com/dailynews/rss/weather/Kiev__UP/*http://weather.yahoo.com/forecast/UPXX0016_c.html</link>
-<pubDate>Thu, 28 Jan 2016 5:30 pm EET</pubDate>
-<yweather:condition  text="Light Rain"  code="11"  temp="6"  date="Thu, 28 Jan 2016 5:30 pm EET" />
+<pubDate>Sun, 31 Jan 2016 10:29 pm EET</pubDate>
+<yweather:condition  text="Mostly Cloudy"  code="27"  temp="1"  date="Sun, 31 Jan 2016 10:29 pm EET" />
 <description><![CDATA[
-<img src="http://l.yimg.com/a/i/us/we/52/11.gif"/><br />
+<img src="http://l.yimg.com/a/i/us/we/52/27.gif"/><br />
 <b>Current Conditions:</b><br />
-Light Rain, 6 C<BR />
+Mostly Cloudy, 1 C<BR />
 <BR /><b>Forecast:</b><BR />
-Thu - Light Rain Early. High: 6 Low: -1<br />
-Fri - Partly Cloudy. High: 2 Low: -2<br />
-Sat - Partly Cloudy. High: 4 Low: -1<br />
-Sun - AM Clouds/PM Sun. High: 4 Low: -1<br />
-Mon - AM Clouds/PM Sun. High: 2 Low: -1<br />
+Sun - Partly Cloudy. High: 4 Low: -2<br />
+Mon - Mostly Cloudy. High: 2 Low: -1<br />
+Tue - AM Rain/Snow. High: 6 Low: 3<br />
+Wed - Cloudy. High: 7 Low: 1<br />
+Thu - Cloudy. High: 4 Low: -1<br />
 <br />
 <a href="http://us.rd.yahoo.com/dailynews/rss/weather/Kiev__UP/*http://weather.yahoo.com/forecast/UPXX0016_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
 (provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
 ]]></description>
-<yweather:forecast day="Thu" date="28 Jan 2016" low="-1" high="6" text="Light Rain Early" code="11" />
-<yweather:forecast day="Fri" date="29 Jan 2016" low="-2" high="2" text="Partly Cloudy" code="30" />
-<yweather:forecast day="Sat" date="30 Jan 2016" low="-1" high="4" text="Partly Cloudy" code="30" />
-<yweather:forecast day="Sun" date="31 Jan 2016" low="-1" high="4" text="AM Clouds/PM Sun" code="30" />
-<yweather:forecast day="Mon" date="1 Feb 2016" low="-1" high="2" text="AM Clouds/PM Sun" code="30" />
-<guid isPermaLink="false">UPXX0016_2016_02_01_7_00_EET</guid>
+<yweather:forecast day="Sun" date="31 Jan 2016" low="-2" high="4" text="Partly Cloudy" code="29" />
+<yweather:forecast day="Mon" date="1 Feb 2016" low="-1" high="2" text="Mostly Cloudy" code="28" />
+<yweather:forecast day="Tue" date="2 Feb 2016" low="3" high="6" text="AM Rain/Snow" code="5" />
+<yweather:forecast day="Wed" date="3 Feb 2016" low="1" high="7" text="Cloudy" code="26" />
+<yweather:forecast day="Thu" date="4 Feb 2016" low="-1" high="4" text="Cloudy" code="26" />
+<guid isPermaLink="false">UPXX0016_2016_02_04_7_00_EET</guid>
 </item>
 </channel>
 </rss>
 
-<!-- api7.weather.bf1.yahoo.com Thu Jan 28 07:46:54 PST 2016 -->
+<!-- fan1622.sports.bf1.yahoo.com Sun Jan 31 13:12:21 PST 2016 -->

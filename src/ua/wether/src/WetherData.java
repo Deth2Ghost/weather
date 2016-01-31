@@ -1,53 +1,60 @@
 package ua.wether.src;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Observable;
 
 import ua.wether.interfaces.Observer;
 import ua.wether.interfaces.Subject;
 
-public class WetherData implements Subject {
-    private ArrayList observers;
-    private float temp;
-    private float press;
-    private float vlazhnost;
+public class WetherData extends Observable {
 
-    public WetherData() {
-	observers = new ArrayList();
-    }
+	private float temp;
+	private float press;
+	private float vlazhnost;
 
-    @Override
-    public void registerObserver(Observer o) {
-	observers.add(o);
+	public WetherData() {
 
-    }
-
-    @Override
-    public void removeObserver(Observer o) {
-	int i;
-	i = observers.indexOf(o);
-	if(i>=0){
-	observers.remove(i);
-	}
-    }
-
-    @Override
-    public void notifyObserver() {
-	for (int i = 0; i < observers.size(); i++) {
-	    Observer observer = (Observer)observers.get(i);
-	    observer.update(temp, press, vlazhnost);
 	}
 
-    }
-    public void mesurmentChanged(){
-	notifyObserver();
-    }
-    public void setMesurment(float temp, float press, float vlazhnost){
-	this.temp = temp;
-	this.press = press;
-	this.vlazhnost = vlazhnost;
-	mesurmentChanged();
-    }
+	public float getTemp() {
+		return temp;
+	}
 
-   
+	public void setTemp(float temp) {
+		this.temp = temp;
+	}
+
+	public float getPress() {
+		return press;
+	}
+
+	public void setPress(float press) {
+		this.press = press;
+	}
+
+	public float getVlazhnost() {
+		return vlazhnost;
+	}
+
+	public void setVlazhnost(float vlazhnost) {
+		this.vlazhnost = vlazhnost;
+	}
+
+	public void mesurmentChanged() {
+		setChanged();
+		notifyObservers();
+	}
+
+	public void setMesurment(float temp, float press, float vlazhnost) throws IOException, InterruptedException {
+		while (true) {
+			this.temp = new GetWeather().getTemp();
+			this.press = new GetWeather().pressure;
+			this.vlazhnost = new GetWeather().humidity;
+			mesurmentChanged();
+			Thread.sleep(600);
+
+		}
+	}
 
 }
